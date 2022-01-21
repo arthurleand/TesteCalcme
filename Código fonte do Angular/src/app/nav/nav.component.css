@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.logoc{
+    color: #205081;
+}
+.logom{
+    color: #00bdfe;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    background-color: #212121c5;
+}

@@ -1,0 +1,49 @@
+<div class="container-fluid bg-total bg-gradient">
+    <div class="row d-flex align-items-center">
+     
+      <div class="col-md-6">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 text-white">
+            <h1 class="text-center mb-3">Cadastrar</h1>
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input
+                [(ngModel)]='userModel.nome'
+                class="form-control"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Digite seu nome"
+              />
+              <label for="email">Email</label>
+              <input
+              [(ngModel)]='userModel.email'
+                class="form-control"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Digite seu email"
+              />
+              <label for="telefone">Telefone</label>
+              <input
+              onkeypress="return (event.charCode > 47 && event.charCode < 58) || (event.charCode > 96 && event.charCode < 123) || (event.charCode == 32);"
+              [(ngModel)]='userModel.telefone'
+                class="form-control"
+                type="text"
+                name="tel"
+                id="tel"
+                placeholder="Somente números"
+              />
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-calcme" (click)='save()'>Cadastrar</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="col-md-6">
+        <img src="https://i.imgur.com/NJdIcjL.png" 
+        class="w-100 d-block" alt="" />
+      </div>
+    </div>
+  </div>
